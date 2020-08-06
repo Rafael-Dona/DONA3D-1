@@ -1,0 +1,242 @@
+header {
+	background-color: #0024ff;
+	font-family: Arial Rounded MT Bold, sans-serif;
+}
+header h1 {	
+	font-size: 60px;
+	text-align: center;
+}
+.logo {
+	/*display: inline-block;*/
+	display: flex; flex-direction: row;
+	justify-content: flex-start;
+	float: left;
+}
+/*.logoytexto {
+	display: flex; flex-direction: row;
+	align-items: flex-start; */
+
+.tituloDona3D{
+	color: #ffffff;
+	text-align: center;
+	margin: auto;
+	display: block;
+	display: flex; flex-direction: row;
+	justify-content: center;
+}
+.intro {
+	display: block;
+	margin: auto;
+	width: 1000px; height: 500px;
+}
+footer {
+	background-color: #454545;
+	color: #ffffff;
+}
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+h2 {
+	font-family: 'Roboto', sans-serif;
+}
+main {
+	font-family: 'Roboto', sans-serif;
+}
+article {
+	font-family: 'Oswald', sans-serif;
+}
+footer li {
+	font-family: 'Roboto', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+}
+nav {
+	font-family: 'Roboto', sans-serif;
+	background-color:  #ffffff;
+	margin: 10px auto;
+}
+nav li {
+	text-transform: uppercase;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: 1px solid;
+}
+a {
+	text-decoration: none;
+	color: #000000
+	
+}
+h3 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.fotomia {
+	float: right;
+}
+
+table {
+	font-family: 'Roboto', sans-serif;
+
+	margin-left: 20px;
+}
+form {
+	font-family: 'Roboto', sans-serif;
+}
+.imagenes_galeria {
+	margin: 10px;	
+}
+.imagenes_galeria div {
+	display: flex; flex-direction: row;
+	justify-content: center;
+}
+nav ul {
+	background-color: #ffffff;
+}
+nav ul li ul {
+	display: none;
+	position: absolute;
+	border-top: 1px solid;
+	padding: 5px;
+}
+nav ul li ul li a :hover {
+	display: block;
+}
+nav li:hover > ul {
+	display: block;
+}
+.mideas {
+	margin: 5px;
+	border: 3px solid;
+}
+.contactame {
+	text-decoration: underline;
+}
+.caja_imagenes {
+	display: flex; flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.nosotros {
+	display: grid;
+	grid-template-areas:"hola hola"
+						"soy soy"
+						"comienzo fotomia"
+						"actualidad actualidad"				
+}
+.hola {
+	grid-area: (hola);
+	align-items: center;
+	align-content: start;
+	justify-content: start;
+	margin-left: 20px;
+}
+.nosotros .soy {
+	grid-area: (soy);
+	align-items: center;
+	align-content: start;
+	justify-content: start;
+	margin-left: 20px;
+}
+.fotomia {
+	grid-area: (fotomia);
+	justify-content: end;
+	margin-right: 20px;
+}
+.nosotros .comienzo {
+	grid-area: (comienzo);
+	align-items: center;
+	align-content: center;
+	justify-content: start;
+	margin-left: 20px;
+	margin-right: 100px;
+}
+.nosotros .actualidad {
+	grid-area: (actualidad);
+	align-items: center;
+	align-content: end;
+	justify-content: start;
+	margin-left: 20px;
+}
+.productos {
+	display: flex; flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.productos div {
+	background-color: #bebebe;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 400%;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-text-stroke: 2px #000000;
+	box-sizing: border-box;
+	height: 400px;
+	width: 400px;
+	margin: 15px;
+	display: flex; flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+}
+.babygroot {
+	background-image: url(../../Imagenes_recortadas/BabygrootMarron.jpg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.celulas {
+	background-image: url(../../Imagenes_recortadas/CelulaVegetal.jpg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.deadpool {
+	background-image: url(../../Imagenes_recortadas/Deadpool.jpg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.dinosaurios {
+	background-image: url(../../Imagenes_recortadas/Dinosaurios.jpg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.dragon {
+	background-image: url(../../Imagenes_recortadas/DragonDiagonal.jpg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.fractales {
+	background-image: url(../../Imagenes_recortadas/PiramideFractal.jpeg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.llaveros {
+	background-image: url(../../Imagenes_recortadas/LlaverosJuliA.jpeg);
+	background-size: 400px;
+	text-decoration: none;
+}
+.productos div:hover {
+	transform: scale(1.1,1.1);
+}
+.mi_carousel {
+	width: 50%;
+	margin: auto;
+}
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $i -20px;
+    }
+}
+
+$sizes: 40px, 50px, 60px;
+
+@each $size in $sizes {
+
+    .tamanos-#{$size} {
+        font-size: $size;
+        height: $size;
+        width: $size;
+    }
+}

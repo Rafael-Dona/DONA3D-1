@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="description" content="Impresion 3d, servicio de impresión 3d, Miramar de ansenuza">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<!--Bootstrap-->
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!--Bootstrap-->
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<div>
+				<img src="../Imagenes/Logo Nuevo 2 Chico.jpg" class="logo">
+			</div>
+		</a>
+		<a href="index.html">
+			<div>
+				<h1 class="tituloDona3D">DONA 3D</h1>
+			</div>
+		</a>
+		<br>
+
+
+		<nav><hr>
+			<div>
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="productos.html">Productos</a>
+						<ul class="submenu">
+							<li><a href="submenu_llaveros.html">Llaveros</a></li>
+							<li><a href="submenu_mates.html">Mates</a></li>
+							<li><a href="sumenu_repuestos.html">Repuestos</a></li>
+							<li><a href="submenu_macetas.html">Macetas</a></li>
+						</ul>
+					</li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>	
+		</nav></header>
+		<hr>	
+		
+	<h2>¿Quieres comunicarte conmigo?</h2>
+
+	<form action="contacto.php" method="post" class="col-lg-6 col-sm-12" meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--Bootstrap-->
+		<fieldset>
+			<div class="form-group">
+			<label for="nombre">Nombre y apellido</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido" class="form-control">
+			</div><!--Bootstrap-->
+			<div class="form-group">
+			<label for="email">Correo electrónico</label>
+				<input type="email" name="email" id="email" placeholder="Ingrese su e-mail" class="form-control">
+			</div><!--Bootstrap-->
+			<p>¿En qué puedo ayudarte?</p>
+				<select name="opciones">
+					<option>Diseño 3D</option>
+					<option>Presupuesto personalizado</option>
+					<option>Precio de producto</option>
+					<option>Servicio completo</option>
+				</select> <br><br>
+				<textarea placeholder="Ingrese su consulta" class="col-lg-6 col-md-9 col-sm-12"></textarea><br><!--Bootstrap-->
+				<input type="reset" value="Borrar texto">
+				<input type="submit" name="submit" value="Enviar"><br><br>
+
+			<label for="Newsletter">¿Desea recibir newsletter?</label>
+			<input type="checkbox" name="si" id="Newsletter">Si
+			<input type="checkbox" name="no" id="Newsletter">No
+
+		</fieldset>
+		
+	</form>
+		
+
+
+	
+
+	<footer>
+		<hr/>
+			<ul>
+				<li>Contacto</li>
+				<li>Mail: rafaeldona3d@gmail.com</li>
+				<li>Teléfono: +54 9 3563 411515</li>
+			</ul>
+			<br>
+	</footer>
+
+	<!--Bootstrap-->
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!--Bootstrap-->
+</body>
+</html>
